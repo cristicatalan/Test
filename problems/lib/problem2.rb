@@ -10,11 +10,11 @@ class Problem2
       max2 = array[1]
     end
 
-    array.slice(2, array.size-1).each do |num|
-      if (num > max2)
-        max2 = max1
-        max1 = array[2]
-      end
+    array[2..-1].each do |num|
+      next if (num <= max2)
+      
+      max2 = max1
+      max1 = array[2]
     end
 
     maximums = [max1, max2]
