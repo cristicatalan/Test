@@ -11,7 +11,7 @@ class Problem2
     end
 
     array[2..-1].each do |num|
-      next if (num <= max2)
+      next if num <= max2
 
       if (num>  max1)
         max2 = max1

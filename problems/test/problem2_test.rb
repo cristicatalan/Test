@@ -40,4 +40,10 @@ class Problem2Test < MiniTest::Unit::TestCase
     maximums = @problem2.get_largest_two_numbers(array)
     assert(maximums == [10, 5])
   end
+
+  def test_given_array_8_14_10_5_14_9_13_21_17_7_get_maximum_10_5
+    array = [8, 14, 10, 5, 14, 9, 13, 21, 17, 7]
+    maximums = @problem2.get_largest_two_numbers(array)
+    assert(maximums == [21, 17])
+  end
 end
