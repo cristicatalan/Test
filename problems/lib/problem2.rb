@@ -13,8 +13,12 @@ class Problem2
     array[2..-1].each do |num|
       next if (num <= max2)
 
-      max2 = max1
-      max1 = array[2]
+      if (num>  max1)
+        max2 = max1
+        max1 = num
+      else
+        max2 = num
+      end
     end
 
     maximums = [max1, max2]
