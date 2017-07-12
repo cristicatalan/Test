@@ -14,6 +14,6 @@ class Problem2Test < MiniTest::Unit::TestCase
   def test_array_having_at_least_two_elements_returns_array_with_two_elements
     array = [1, 2, 3]
     maximums = @problem2.get_largest_two_numbers(array)
-    assert_equal(2, array.size)
+    assert_equal(2, maximums.size)
   end
 end
