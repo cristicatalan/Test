@@ -1,5 +1,5 @@
 class Problem2
   def get_largest_two_numbers(array)
-    [0, 1]
+    raise "Array must have at least two elements."
   end
 end
