@@ -9,7 +9,7 @@ class Problem2
       max1 = array[0]
       max2 = array[1]
     end
-    
+
     maximums = [max1, max2]
   end
 end
