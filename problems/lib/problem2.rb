@@ -5,8 +5,11 @@ class Problem2
     if (array[1] > array[0])
       max1 = array[1]
       max2 = array[0]
+    else
+      max1 = array[0]
+      max2 = array[1]
     end
-
+    
     maximums = [max1, max2]
   end
 end
