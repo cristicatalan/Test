@@ -35,4 +35,10 @@ class Problem3Test < MiniTest::Unit::TestCase
     has_duplicate = @problem3.has_duplicate(array)
     assert(has_duplicate)
   end
+
+  def test_given_array_10_1_2_3_7_3_7_3_9_3_has_duplicate
+    array = [10, 1, 2, 3, 7, 3, 7, 3, 9, 3]
+    has_duplicate = @problem3.has_duplicate(array)
+    assert(has_duplicate)
+  end
 end
