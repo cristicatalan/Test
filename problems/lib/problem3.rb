@@ -1,10 +1,12 @@
 class Problem3
   def has_duplicate(array)
-    for i in (0..array.size-1)
-      relocated_index = array[i] % 5
-      return true if array[relocated_index] > 5
+    len = array.size
 
-      array[relocated_index] = array[relocated_index] + 5
+    for i in (0..len-1)
+      relocated_index = array[i] % len
+      return true if array[relocated_index] > len
+
+      array[relocated_index] = array[relocated_index] + len
     end
 
     return false
