@@ -11,4 +11,16 @@ class Problem3Test < MiniTest::Unit::TestCase
     has_duplicate = @problem3.has_duplicate(array)
     refute(has_duplicate)
   end
+
+  def test_empty_array_no_duplicate
+    array = []
+    has_duplicate = @problem3.has_duplicate(array)
+    refute(has_duplicate)
+  end
+
+  def test_given_array_4_1_5_3_4_no_duplicate
+    array = [4, 1, 5, 3, 4]
+    has_duplicate = @problem3.has_duplicate(array)
+    assert(has_duplicate)
+  end
 end
