@@ -21,6 +21,6 @@ class Problem2
       end
     end
 
-    maximums = [max1, max2]
+    [max1, max2]
   end
 end
