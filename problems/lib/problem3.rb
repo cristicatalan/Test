@@ -6,7 +6,7 @@ class Problem3
       relocated_index = array[i] % len
       return true if array[relocated_index] > len
 
-      array[relocated_index] = array[relocated_index] + len
+      array[relocated_index] += len
     end
 
     return false
