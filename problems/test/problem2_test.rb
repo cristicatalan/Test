@@ -8,7 +8,8 @@ class Problem2Test < MiniTest::Unit::TestCase
 
   def test_given_array_having_one_element_raises_exception
     array = [1]
-    assert_raises("Array must have at least two elements.") {@problem2.get_largest_two_numbers(array)}
+    ex = assert_raises(ArgumentError) {@problem2.get_largest_two_numbers(array)}
+    assert_equal("Array must have at least two elements.", ex.message)
   end
 
   def test_given_array_having_at_least_two_elements_returns_array_with_two_elements
