@@ -4,11 +4,11 @@ class Problem3
 
     for i in (0..len-1)
       relocated_index = array[i] % len
-      return true if array[relocated_index] > len
+      result = true and break if array[relocated_index] > len
 
       array[relocated_index] += len
     end
 
-    return false
+    result
   end
 end
