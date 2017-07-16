@@ -9,6 +9,6 @@ class Problem3
       array[relocated_index] += len
     end
 
-    !result.nil?
+    true & result
   end
 end
